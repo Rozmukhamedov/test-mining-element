@@ -1,0 +1,48 @@
+@import url('@/vendor/fonts.scss');
+
+@mixin text-body($font-size, $font-weight, $line-height){
+	font-family: 'Open Sans', sans-serif;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	color: #1E1E1E;
+}
+
+@mixin text-headline($font-size, $font-weight, $line-height) {
+  font-family: 'Open Sans', sans-serif;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	color: #1E1E1E;
+}
+
+@mixin text-button($font-size, $font-weight, $line-height) {
+	font-family: 'Open Sans', sans-serif;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	color: #1E1E1E;
+}
+
+@mixin text-headline-h1() {
+	@include text-headline(21px, 700, normal)
+}
+
+@mixin text-headline-h2() {
+	@include text-headline(16px, 500, normal)
+}
+
+
+@mixin text-body-s {
+	@include text-body(12px, 400, normal);
+}
+
+@mixin text-body-l {
+	@include text-body(12px, 500, normal);
+}
+
+
+@mixin text-button-s {
+	@include text-button(12px, 400, normal)
+}
+
